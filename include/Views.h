@@ -8,7 +8,7 @@
  * for seasons, etc.
  */
 
-#define EARTH_LENGTH 40
+#define EARTH_LENGTH 80
 #define EARTH_HEIGHT 40
 
 #define MERCATOR_PROJECTION_LENGTH 125
