@@ -1,0 +1,20 @@
+CompileFlags:
+  CompilationDatabase: None
+
+  Add:
+    - "-I../include"
+    - "-std=c17"
+    - '-D VERSION="(char*)(\"0.0.1b\")"'
+
+Diagnostics:
+  UnusedIncludes: Strict
+  ClangTidy:
+    Add:
+      - modernize-*
+      - performance-*
+      - bugprone-*
+
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes

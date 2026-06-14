@@ -1,0 +1,16 @@
+build/
+
+__pycache__
+.cache
+.DS_STORE
+
+terraview
+terraview.exe
+terraview.dSYM
+
+scratchpad
+list.todo
+op.txt
+
+.vscode/
+.zed/

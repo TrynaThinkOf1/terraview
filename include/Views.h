@@ -2,7 +2,10 @@
 #define TERRAVIEW_VIEWS_H
 
 /*
- * The earth is going to be split into ...
+ * The earth is going to be split into sections via the mercator projection
+ * below. A slice will be taken from it and turned into a circle to render.
+ * In the future, I might add the ability to change the angle of the circle
+ * for seasons, etc.
  */
 
 const char* MERCATOR_PROJECTION[] = {
