@@ -27,11 +27,9 @@ WINDOW* renderEarth(int starty, int startx, int view) {
 
      // copy the rest of the characters in line, rather than an arbitrary number
     strncpy(buffer, line + view, copy_len);
-
-    if (view + EARTH_LENGTH > MERCATOR_PROJECTION_LENGTH) { // we need to wrap around
-      
+    if (copy_len < EARTH_LENGTH) { // we need to wrap around
+      strncpy(buffer + copy_len - 1, line, EARTH_LENGTH - copy_len);
     }
-    
     buffer[EARTH_LENGTH] = '\0';
 
     memset(buffer, ' ', SYMMETRIC_CUTOFFS[row] / 2);
