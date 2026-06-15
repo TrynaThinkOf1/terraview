@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
   noecho(); // don't automatically display the chars that users type
   curs_set(0); // make cursor invisible
   
-  halfdelay(6); // wait 600ms per cycle
+  halfdelay(3); // wait 300ms per cycle
 
   int maxy, maxx;
   getmaxyx(stdscr, maxy, maxx);
